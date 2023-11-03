@@ -240,7 +240,7 @@ Given("Logado ao Site", ()=> {
 
 Then("Cor de fundo deve se tornar amarelo", () => {
   //cy.wait (5000)
-  cy.get('#card-color').should('have.css', 'card-body').and('eq','rgb(255, 193, 7)')
+  cy.get('#card-color').should('have.css', 'background-color').and('eq','rgb(255, 255, 0)')
   
 })
 
@@ -268,6 +268,6 @@ Given("Logado ao Site", ()=> {
 
 Then("Cor de fundo deve se tornar vermelho", () => {
   //cy.wait (5000)
-  cy.get('#card-color').should('have.css', 'changeBackgroundColor(this.value)').and('eq', 'rgb(220, 53, 69)')
+  cy.get('#card-color').should('have.css', 'background-color').and('eq', 'rgb(255, 0, 0)')
   
 })
